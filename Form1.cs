@@ -96,12 +96,12 @@ namespace Bad
 
         private void button9_Click(object sender, EventArgs e)
         {
-            
-            Process terminal = new Process();
-            terminal.StartInfo.FileName = @"c:\windows\explorer.exe";
-            terminal.StartInfo.Arguments = @"C:\Program Files\WindowsApps\Microsoft.WindowsTerminal_1.11.3471.0_x64__8wekyb3d8bbwe\wt.exe";
-            terminal.EnableRaisingEvents = true;
-            terminal.Start();
+
+            var terminal = new ProcessStartInfo();
+            terminal.UseShellExecute = true;
+            terminal.FileName = "explorer.exe";
+            terminal.Arguments = @"C:\Program Files\WindowsApps\Microsoft.WindowsTerminal_1.12.10733.0_x64__8wekyb3d8bbwe\WindowsTerminal.exe";
+            Process.Start(terminal);
         }
 
         private void button10_Click(object sender, EventArgs e)
