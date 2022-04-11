@@ -159,7 +159,7 @@ namespace Bad
         {
             Process logout = new Process();
             logout.StartInfo.FileName = "shutdown.exe";
-            logout.StartInfo.Arguments = "/l /t 0";
+            logout.StartInfo.Arguments = "/l";
             logout.StartInfo.WorkingDirectory = @"c:\windows\system32";
             logout.EnableRaisingEvents = true;
             logout.Start();
