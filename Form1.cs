@@ -100,7 +100,8 @@ namespace Bad
             var terminal = new ProcessStartInfo();
             terminal.UseShellExecute = true;
             terminal.FileName = "explorer.exe";
-            terminal.Arguments = @"C:\Program Files\WindowsApps\Microsoft.WindowsTerminal_1.12.10733.0_x64__8wekyb3d8bbwe\WindowsTerminal.exe";
+            // I REALLY need to find a better way to do this.
+            terminal.Arguments = @"C:\Program Files\WindowsApps\Microsoft.WindowsTerminal_1.12.10983.0_x64__8wekyb3d8bbwe\WindowsTerminal.exe";
             Process.Start(terminal);
         }
 

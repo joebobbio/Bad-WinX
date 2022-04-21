@@ -1,3 +1,6 @@
+// Bad Win+X menu
+// Version 1.1.2
+// Released under the Unlicense. Created by Phene.
 namespace Bad
 {
     internal static class Program
